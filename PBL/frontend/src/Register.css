@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Register Section */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.register-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #c0b283;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.register-title {
+  font-size: 2rem;
+  color: #3d3d3d;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.register-input {
+  padding: 15px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.register-input:focus {
+  border-color: #b28d2e;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.register-button {
+  background-color: #d4af37;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #b28d2e;
+}
+
+.register-login-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.login-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .register-container {
+    padding: 20px;
+  }
+
+  .register-title {
+    font-size: 1.8rem;
+  }
+
+  .register-button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

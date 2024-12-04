@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login Section */
+.auth-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #c0b283;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 2rem;
+  color: #3d3d3d;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input {
+  padding: 15px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #b28d2e;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.login-button {
+  background-color: #d4af37;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #b28d2e;
+}
+
+.login-register-text {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.register-link {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .login-button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Create Poll Container */
+.create-poll-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  border-radius: 15px;
+  border: 3px solid #c0b283;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.create-poll-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+.create-poll-container label {
+  display: block;
+  font-size: 1.2rem;
+  color: #444;
+  margin: 20px 0 10px;
+}
+
+.create-poll-container input[type="text"],
+.create-poll-container input[type="datetime-local"],
+.create-poll-container input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-top: 5px;
+}
+
+.create-poll-container input:focus {
+  outline: none;
+  border-color: #a0842c;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+.create-poll-container h3 {
+  font-size: 1.8rem;
+  color: #6d4c41;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.options-container > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.options-container > div input {
+  flex: 1;
+}
+
+.create-poll-container button {
+  display: block;
+  width: 100%;
+  background-color: #d4af37;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-poll-container button:hover {
+  background-color: #b28d2e;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .create-poll-container {
+    padding: 20px;
+  }
+
+  .create-poll-container h2 {
+    font-size: 2rem;
+  }
+
+  .create-poll-container label {
+    font-size: 1rem;
+  }
+
+  .create-poll-container h3 {
+    font-size: 1.5rem;
+  }
+}
